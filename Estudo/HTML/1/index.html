@@ -70,9 +70,10 @@
 	<a href="">Home</a>/
 	<a href="">sobre</a>
 
-	<!-- Tabelas     border=borda      tr = linha   td = coluna   th cabeçalho-->
+	<!-- Tabelas     border=borda   |   tr = linha  | td = coluna | th cabeçalho | width = tamanho |
+	 mesclar celulas: colspan="" (linha) | mesclar celulas: rowspan="" (coluna)  -->
 
-	<table border="1">
+	<table border="1" width="50%">
 		
         <tr>
         	<th>Codigo</th>
@@ -87,17 +88,22 @@
 
          <tr>
         	<td>0001</td>
-        	<td>notebook</td>
-        	<td>10000</td>
+        	<td>PC</td>
+        	<td>4000</td>
         </tr>
 
          <tr>
-        	<td>0001</td>
-        	<td>notebook</td>
-        	<td>10000</td>
+        	<td rowspan="2">Cupons:</td>
+        	<td colspan="2"> Cupom r$ 10</td>
+        </tr>
+        <tr>
+        
+        	<td colspan="2"> Cupom r$ 10</td>
         </tr>
 
 	</table>
+
+	<!-- FORMULARIOS-->
 
 </body>
 </html>

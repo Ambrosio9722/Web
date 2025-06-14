@@ -1,1 +1,1 @@
-![Screenshot do projeto](Captura%20de%20tela%202025-06-14%20001909.png)
+![Screenshot do projeto](imagens/readmi.png)

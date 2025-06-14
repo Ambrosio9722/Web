@@ -1,1 +1,1 @@
-![Screenshot do projeto](imagens/readmi.png)
+![Screenshot do projeto](imagens/readme.png)

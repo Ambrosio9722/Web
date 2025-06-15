@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>inline style</title>
              <!-- CSS -->
+             <!-- ID = um identificador de ponto unico  (# "jogo da velha") Ex: #principal | para usar: id="principal"
+                  Classe = um identificador de varios pontos  (. "ponto" NOME DA CLASSE)  Ex: .azul |  para usar: class="azul"-->
 		<style type="text/css">
 			p{
 				color: blueviolet;
@@ -12,12 +14,18 @@
 			h1{
 				color: deeppink;
 			}
+			.azul{
+				color: skyblue;
+			}
+			#principal{
+				background-color: yellowgreen;
+			}
 		</style>
 
 </head>
-<body>
+<body id="principal">
 
-	<h1> Estilo CSS (cascading style sheets)</h1>
+	<h1 class="azul"> Estilo CSS (cascading style sheets)</h1>
 
 <!-- style= " " -->
 <!-- color = colocar cor -->

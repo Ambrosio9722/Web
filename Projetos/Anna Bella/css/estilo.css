@@ -12,6 +12,10 @@ a{
 h1{
 	color: #828271;
 	font-size: 1.2em;
+	text-align: center;
+}
+p{
+	text-align: left;
 }
 
 #rodape{
@@ -19,7 +23,6 @@ h1{
 }
 #principal{
 
-	
 	width: 1200px;
 }
 #menu{
@@ -30,6 +33,11 @@ h1{
 #conteudo{
 	background: #e8e8d9;
 	padding: 10px;
+}
+#contato{
+	text-align: left;
+	 background: #c5c5b2;
+	 padding: 30px;
 }
 .centralizar{
 	text-align: center;

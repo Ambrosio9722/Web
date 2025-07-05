@@ -13,9 +13,7 @@ h1{
 	color: #828271;
 	font-size: 1.2em;
 }
-img{
-	border: 1px;
-}
+
 #rodape{
 	text-align: center;
 }
@@ -35,4 +33,10 @@ img{
 }
 .centralizar{
 	text-align: center;
+}
+.bordaIMG{
+	/*border-color: #c3c3ae;
+	border-right: 10px;*/
+	
+	border: 10px solid #c3c3ae;
 }

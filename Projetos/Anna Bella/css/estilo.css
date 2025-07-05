@@ -13,6 +13,9 @@ h1{
 	color: #828271;
 	font-size: 1.2em;
 }
+img{
+	border: 1px;
+}
 #rodape{
 	text-align: center;
 }

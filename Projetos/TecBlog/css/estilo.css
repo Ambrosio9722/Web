@@ -1,0 +1,41 @@
+body{
+	background: #DCDCDC;
+}
+
+
+
+
+#cabecalho{
+	background-color:#FFFF00;
+	padding: 20px;
+	margin: 0px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+#titulo-cabecalho{
+  
+}
+#links-cabecalho{
+   padding: 20px;
+   margin: 30px;
+ }
+
+#bloco1{
+	width: 900px;
+   background-color: white;
+   padding: 15px;
+   display: inline-block;
+}
+#rodape{
+	background-color:#B0C4DE ;
+	width: 900px;
+	display: block;
+	padding: 15px;
+	
+}
+
+
+.corAmarelo{
+	color:#FFFF00 ;
+}

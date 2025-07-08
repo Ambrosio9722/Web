@@ -2,12 +2,11 @@ body{
 	background: #DCDCDC;
 	margin: 0px;
 }
-
+h1{
+    margin: 0px ;
+}
 a{
-	color: white;
 	text-decoration: none;
-	padding: 30px;
-	font-size: 20px;
 }
 a:link{
 			color: white;
@@ -44,6 +43,7 @@ a:active{
    padding: 20px 50px;
    margin: 30px;
    text-decoration: none;
+
  }
 
 #bloco1{
@@ -85,4 +85,21 @@ a:active{
 .tituloCinza{
 	background-color: #A9A9A9;
 	padding: 5px;
+}
+.leiaMais{
+	color: #DAA520;
+	text-decoration: none;
+	padding: 0px;
+	font-size: 0px;
+}
+.link2{
+	
+	color: white;
+	text-decoration: none;
+	padding: 30px;
+	font-size: 20px;
+
+}
+.link3{
+font-size: 15px;
 }

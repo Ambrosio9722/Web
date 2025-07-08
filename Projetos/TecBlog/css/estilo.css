@@ -1,24 +1,49 @@
 body{
 	background: #DCDCDC;
+	margin: 0px;
 }
 
+a{
+	color: white;
+	text-decoration: none;
+	padding: 30px;
+	font-size: 20px;
+}
+a:link{
+			color: white;
+		}
 
+         /*Links  Hover, passa o cursor sobre o link*/
+a:hover{
+			color:#DAA520;
+			background: white;
+		}
+		   /*Links  Ativos, quando clicado*/
+a:active{
+			color: #e4f371;
+		}
 
+#corpoTexto{
+	width: 1500px;
+	/*border: 1px solid red;*/
+}
 
 #cabecalho{
-	background-color:#FFFF00;
-	padding: 20px;
+	background-color:#DAA520;
+	padding: 10px;
 	margin: 0px;
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 
 }
 #titulo-cabecalho{
-  
+   font-size: 30px;
 }
+
 #links-cabecalho{
-   padding: 20px;
+   padding: 20px 50px;
    margin: 30px;
+   text-decoration: none;
  }
 
 #bloco1{
@@ -27,8 +52,26 @@ body{
    padding: 15px;
    display: inline-block;
 }
+#bloco2{
+	background-color: white;
+	float: right;
+	width: 400px;
+	padding: 10px;
+	position: absolute;
+	left: 1000px;
+	top: 280px;
+}
+#bloco3{
+	background-color: white;
+	float: right;
+	width: 400px;
+	padding: 10px;
+	position: absolute;
+	left: 1000px;
+	top: 580px;
+}
 #rodape{
-	background-color:#B0C4DE ;
+	background-color:#A9A9A9 ;
 	width: 900px;
 	display: block;
 	padding: 15px;
@@ -37,5 +80,9 @@ body{
 
 
 .corAmarelo{
-	color:#FFFF00 ;
+	color:#DAA520;
+}
+.tituloCinza{
+	background-color: #A9A9A9;
+	padding: 5px;
 }

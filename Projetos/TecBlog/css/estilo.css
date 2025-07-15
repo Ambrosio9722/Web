@@ -29,6 +29,7 @@ a:active{
 
 #cabecalho{
 	background-color:#DAA520;
+	opacity: 0.3;
 	padding: 10px;
 	margin: 0px;
 	text-align: center;

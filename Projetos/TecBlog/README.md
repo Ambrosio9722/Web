@@ -1,2 +1,1 @@
-![Screenshot do projeto](imagens/r1.png)
-![Screenshot do projeto](imagens/r2.png)
+![Screenshot do projeto](imagens/Captura de tela 2025-08-25 104203.png)

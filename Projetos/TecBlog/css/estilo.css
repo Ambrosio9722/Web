@@ -1,3 +1,10 @@
+/*centralizar :  margin:0 auto;*/
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
 body{
 	background: #DCDCDC;
 	margin: 0px;
@@ -29,7 +36,7 @@ a:active{
 
 #cabecalho{
 	background-color:#DAA520;
-	opacity: 0.3;
+	
 	padding: 10px;
 	margin: 0px;
 	text-align: center;
@@ -41,8 +48,8 @@ a:active{
 }
 
 #links-cabecalho{
-   padding: 20px 50px;
-   margin: 30px;
+   padding: 20px 40px;
+   margin: 20px;
    text-decoration: none;
 
  }
@@ -57,6 +64,7 @@ a:active{
 	background-color: white;
 	float: right;
 	width: 400px;
+	height: 190px;
 	padding: 10px;
 	position: absolute;
 	left: 1000px;

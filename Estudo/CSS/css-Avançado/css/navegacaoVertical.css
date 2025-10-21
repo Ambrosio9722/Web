@@ -1,0 +1,32 @@
+ ul{
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style-type: none;
+ }
+
+ ul a {
+ 	border: 1px solid black;
+ 	width: 200px;
+ 	height: 40px;
+ 	display: block;
+ 	color: #000;
+ 	text-indent: 30px;
+ 	line-height: 40px;  /* line-height: A altura da linah do texto(texto indo pra cima ou pra baixo) */
+ 	text-decoration: none;
+ 	background: #f7b600 url(../imagens/menu.png) no-repeat left bottom;
+ }
+
+ a:hover{
+ 	background-position: right bottom;
+ 	background-color: #f99200;
+ 	color: #fff;
+ }
+
+
+ /*Marcar a pagina que esta*/
+
+ #Home .home a, #sobre .sobre a{
+background-color: #f99200;
+background-position: right bottom;
+color:#fff;
+ }

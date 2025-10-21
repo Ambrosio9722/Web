@@ -1,0 +1,23 @@
+*{
+	border: solid red 1px;
+}
+
+body{
+	background: whitesmoke;
+}
+
+h1 > a{
+   color:pink;
+}
+
+p a{
+ color:purple;
+}
+
+h1+p{
+	color:gray;
+}
+
+h1 ~ p{
+	color:violet;
+}

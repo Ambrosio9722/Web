@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+        background-image:url("../imagens/2.jpg") ;
+        background-attachment: fixed;
+}
+
+#cabecalho{
+    border: 1px solid red;
+    padding: 15px;
+    border: 10px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    
+}
+#titulo{
+    padding: 20px 10px;
+    font-size: 50px;
+}
+h1,h3, p {
+    color:aliceblue;
+}
+
+.conteudo{
+    border: 3px solid white;
+    width: 200px;
+    color: pink;
+    padding: 20px;
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#rodape{
+    background-color: black;
+    color: white;
+    padding:  50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#navegacao{
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px 100px;
+   text-align: center;
+   font-size: 25px;
+}
+a:hover {
+    color: hotpink;
+    background-color: white;
+  }
+
+#blocoConteudos{
+    
+}
+
+#conteudoB{
+background-color: white;
+width: 900px;
+position: absolute;
+top:300px;
+right: 390px;
+
+border: 10px solid pink;
+padding: 10px;
+border-radius: 25px;
+}
+
+.noticiaB{
+text-decoration: none;
+padding: 10px;
+margin: 10px;
+
+}
+
+.noticiaB h1{
+    color: black;
+    font-size: 40px;
+}
+
+.noticiaB p{
+    color: black;
+    
+}
+.noticiaB a {
+    color: pink;
+    font-size: 20px;
+}
+
+.noticiasB img{
+    border-radius: 25px;
+}
+
+.tigre{
+    position: absolute;
+top:300px;
+right: 100;
+}

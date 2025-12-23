@@ -1,0 +1,15 @@
+*{
+  font-family: system-ui;
+}
+section{
+   background-color: #311d39;
+}
+nav{
+    background-color: #67434f ;
+}
+main{
+    background-color:  #9b8e7e ;
+}
+footer{
+    background-color: #c3ccaf ;
+}

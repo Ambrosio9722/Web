@@ -3,7 +3,7 @@ body{
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items:center;
 }
 
 #um{
@@ -20,4 +20,17 @@ body{
 
 #quatro{
     background-color: yellow;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: red;
+  }
+
+}
+@media (max-width: 1000px) {
+  body {
+    background: blue;
+  }
+  
 }

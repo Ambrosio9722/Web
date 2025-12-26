@@ -34,7 +34,7 @@ footer{
      border-radius: 0px 0px 30px 30px;
      text-align: center;
      color: #4B2C5E;
-     font-size: 20px;
+     font-size: 15px;
      padding: 10px;
 }
 a{
@@ -63,6 +63,16 @@ summary{
     box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
 }
 
+
+details{
+    display: flex;
+     flex-direction: row;
+     justify-content: center;
+}
+
+figure{
+    padding: 10px;
+}
 .corsub{
     color:#5F5F5F;
 }

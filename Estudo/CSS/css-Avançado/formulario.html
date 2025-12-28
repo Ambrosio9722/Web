@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<header>
+ <meta charset="UTF-8">
+ <title>Estilizando Formularios</title>
+ <link rel="stylesheet" href="css/formulario.css" type="text/css">
+
+</header>
+
+<body>
+   <h2> Estilizando Formularios</h2>
+
+</body>
+
+<form> 
+     <fieldset> <!-- Agrupar dados semelhantes-->
+       <legend> Detalhes de Contato</legend> <!--Colocar titulo no bloco-->
+        <div>
+            <label for="nome"> Nome: </label> <!--Rotulo da caixa de texto || for= assosia a caixa de texto com o nome-->
+            <input type="text" name="nome" id="nome"> 
+        </div>
+         <div>
+            <label for="email"> Email: </label> 
+            <input type="text" name="email" id="email"> 
+        </div>
+         <div>
+            <label for="url"> Url: </label> 
+            <input type="text" name="url" id="url"> 
+        </div>
+     </fieldset>
+
+     <fieldset>
+       <legend> Comentarios </legend>
+         <div>
+            <label for="mensagem"> mensagem: </label>
+            <textarea  name="mensagem"  id="mensagem"></textarea>
+         </div>
+     </fieldset>
+
+     <fieldset>
+       <legend> Lembrar de min: </legend>
+       <div>
+            <label>
+               <input type="radio" id="sim" name="radio"> sim
+            </label>
+       </div>
+        <div>
+            <label>
+               <input type="radio" id="nao" name="radio"> não
+            </label>
+       </div>
+
+     </fieldset>
+
+
+</form>
+
+
+</html>

@@ -1,0 +1,28 @@
+/**/
+table{
+    width: 600px;
+    border-collapse: separate; /*deixar as celualas da tabela separadas ou não  (collapse: se junta| separate: se separa )*/ 
+}
+th, td{
+   
+    padding: 7px;
+}
+th{
+    text-transform: uppercase; /*deixa todas as letras em maiusculas*/
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left; /*alinhar o texto a direita ou esquerda*/
+    font-size: 90%;
+    letter-spacing: 0.1em;/*espaçamento entre as letras*/
+}
+
+tr.alternado{
+    background-color: #efefef;
+}
+
+tr:hover{
+    background-color: #c3e6e5;
+}
+.numero{
+    text-align: right;
+}

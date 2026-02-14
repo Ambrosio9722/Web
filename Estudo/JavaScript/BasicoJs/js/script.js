@@ -24,3 +24,19 @@ var teste = null
 // undefined = a variavel nã opossiu nenhum valor
 var teste2
 var teste3 = undefined
+
+
+var a = 10
+var b = 20
+var c = null
+document.write(a)
+document.write(b)
+document.write(c)
+
+c = a
+a = b
+b = c
+
+document.write(a)
+document.write(b)
+document.write(c)

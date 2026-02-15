@@ -40,3 +40,10 @@ b = c
 document.write(a)
 document.write(b)
 document.write(c)
+
+if(true){
+ document.write("entrou no if")
+}
+else{
+
+}

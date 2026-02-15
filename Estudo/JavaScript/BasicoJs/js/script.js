@@ -41,9 +41,9 @@ document.write(a)
 document.write(b)
 document.write(c)
 
-if(true){
+if(5 == "5"){
  document.write("entrou no if")
 }
 else{
-
+document.write("entrou no else")
 }

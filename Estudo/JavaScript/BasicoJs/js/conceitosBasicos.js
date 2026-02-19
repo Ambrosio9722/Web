@@ -24,3 +24,21 @@ switch (condicao){
     default:
 
 }
+
+// FUNÇOES //
+
+function aprenderFuncoes(valor1, valor2){
+
+}
+// chamar a função //
+aprenderFuncoes(21,34)
+
+
+// FUNÇÕES ANONIMAS // 
+
+var funcaoAnonima = function(){
+        var soma = 10 + 10 
+}
+
+// CHAMAR FUNÇÕES ANONIMAS // 
+funcaoAnonima()

@@ -8,3 +8,19 @@ parseFloat()// converte a variavel para o tipo float
 //E = %%
 //OU = ||
 //NEGAÇÃO = !
+
+// SWITCH // 
+
+switch (condicao){
+
+    case 1:
+            // se condição for === 1 
+    break
+
+    case 2:
+            // se condição for === 1 
+    break
+
+    default:
+
+}

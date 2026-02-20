@@ -74,4 +74,12 @@ exibirArtigo(1,callbackSusseso,callbackErro)
 //toUpperCase() = converte uma string para letras maiusculas
 //tolowerCase() = converte uma string para Letras minusculas
 //trim() = remove os espaços em branco do inicio e do fim de uma string
-//EXEMPLO = variavel.replace() 
+//EXEMPLO = variavel.replace()
+
+
+// ======== FUNÇOES NATIVAS PARA MATEMATICA (Math.)=======/
+
+// arredondar para cima= Math.ceil()
+// arredondar para baixo = Math.floor()
+//arredondar para o inteiro mais proximo = math.round()
+//gerar um numero aleatorio entre 0 e 1 = math.random()

@@ -63,3 +63,15 @@ var callbackErro = function(erro){
 }
 
 exibirArtigo(1,callbackSusseso,callbackErro)
+
+//==== FUNÇOES NATIVAS PARA STRINGS =====//
+
+//propriedade length = quantidade de caracteres de uma string
+//charAt() = retorna o caractere em uma posição especifica
+//indexOf() = retorna a posição da primeira ocorrencia de um caractere 
+//repalce() = substituir uma cadeia de caracteres (palavra) por outro
+//substr() = extrai uma parte de uma string, com base em um indice inicial e um comprimento
+//toUpperCase() = converte uma string para letras maiusculas
+//tolowerCase() = converte uma string para Letras minusculas
+//trim() = remove os espaços em branco do inicio e do fim de uma string
+//EXEMPLO = variavel.replace() 

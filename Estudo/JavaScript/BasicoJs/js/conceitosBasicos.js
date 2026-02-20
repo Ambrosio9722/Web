@@ -42,3 +42,24 @@ var funcaoAnonima = function(){
 
 // CHAMAR FUNÇÕES ANONIMAS // 
 funcaoAnonima()
+
+// FUNÇÕES DE CALLBACK//
+// uma função que é passada como argumento para outra função e é executada apos um evento ou condição espeficica ser atendida
+function exibirArtigo(id, callbackSusseso, callbackErro){
+        //Logica: recuperar id via requisição https, 
+        if(true){
+             callbackSusseso("Artigo dos navios","O artigo foi carregado .....")
+        }
+        else{
+                callbackErro("erro ao recuperar os dados")
+        }
+}
+//CHAMAR A FUNÇÃO DE CALLBACK//
+var callbackSusseso = function(tirulo, descrição){
+        //////Msotra titulo e descrição
+}
+var callbackErro = function(erro){
+       ///////Mostra mensagem de erro
+}
+
+exibirArtigo(1,callbackSusseso,callbackErro)

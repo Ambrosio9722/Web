@@ -4,6 +4,38 @@
 <meta charset="UTF-8">
 <title>JAVAscript</title>
 
+<script>
+
+function distribuiCaracter(){
+// recuperar o valor digitado
+var valor = document.getElementById("entrada").value
+
+document.getElementById("entrada").value = ""
+
+//limpar espaços em branco
+valor.trim()
+
+switch (valor){
+case "0":
+case "1":
+case "2":
+case "3":
+case "4":
+case "5":
+case "6":
+case "7":
+case "8":
+case "9":
+    // valores numericos
+    document.getElementById("numeros").value = valor
+    break
+
+default:
+   // valores do alfabeto
+          document.getElementById("letras").value = valor
+}
+}
+</script>
 
 </header>
 
@@ -19,6 +51,18 @@ class="campo_texto">
 
 
 <script src="js/dom.js"></script>
+<span>caracter: </span>
+<input type="text" placeholder="Digite um caracter aqui" onkeyup="distribuiCaracter()" id="entrada">
+
+<hr>
+<span>Letras: </span>
+<input type="text" disabled="disabled" id="letras">
+<span>Números: </span>
+<input type="text" disabled="disabled" id="numeros">
+
+
+
+
 
 
 </body>

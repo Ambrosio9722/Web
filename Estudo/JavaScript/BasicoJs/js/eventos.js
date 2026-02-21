@@ -32,4 +32,17 @@
 //onresize = quando redimensionar a janela do navegador vai fazer a ação
   //EX: <body onresize="console.log('Evento disparado')">
 //onscroll = quando rolar a barra de rolagem da janela do navegador vai fazer a ação
-  // 
+  // <body onscroll="console.log('Evento de rolagem disparado')">
+
+//----- FORMULARIOS -----//
+
+//onfocus = quando clicar dentro do campo de formulario vai fazer a ação 
+  // EX: <input onfocus="console.log('texte formualrio')" type="text" >
+//onblur = quando clicar fora do campo de formualrio vai fazer a ação 
+  // EX: <input onblur="console.log('fora do formulario')"  type="text" >
+//onchange = quando mudar o valor do campo de formualrio e clicar fora do campo vai fazer a ação
+  //EX: <select onchange="console.log('O estado mudou!')">
+       // <option>--selecione-- </option>
+       // <option value="1">selecione 1</option>
+       //<option value="2">selecione 2</option>
+       //</select>

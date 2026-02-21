@@ -25,3 +25,11 @@
     // EX: <input onkeyup="alert('tecla solta')" type="text" >
 //onkeypress = quando pressionar a tecla do teclado (sendo um caractere) vai fazer a ação
     // EX: <input onkeypress="alert('tecla pressionada')" type="text" >)
+
+
+//----- JANELAS -----//
+
+//onresize = quando redimensionar a janela do navegador vai fazer a ação
+  //EX: <body onresize="console.log('Evento disparado')">
+//onscroll = quando rolar a barra de rolagem da janela do navegador vai fazer a ação
+  // 

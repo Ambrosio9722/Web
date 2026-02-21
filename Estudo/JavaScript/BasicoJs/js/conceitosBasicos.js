@@ -25,7 +25,7 @@ switch (condicao){
 
 }
 
-// FUNÇOES //
+//====== FUNÇOES ======//
 
 function aprenderFuncoes(valor1, valor2){
 
@@ -34,7 +34,7 @@ function aprenderFuncoes(valor1, valor2){
 aprenderFuncoes(21,34)
 
 
-// FUNÇÕES ANONIMAS // 
+//====== FUNÇÕES ANONIMAS ======// 
 
 var funcaoAnonima = function(){
         var soma = 10 + 10 
@@ -43,7 +43,7 @@ var funcaoAnonima = function(){
 // CHAMAR FUNÇÕES ANONIMAS // 
 funcaoAnonima()
 
-// FUNÇÕES DE CALLBACK//
+//====== FUNÇÕES DE CALLBACK ======//
 // uma função que é passada como argumento para outra função e é executada apos um evento ou condição espeficica ser atendida
 function exibirArtigo(id, callbackSusseso, callbackErro){
         //Logica: recuperar id via requisição https, 
@@ -83,3 +83,5 @@ exibirArtigo(1,callbackSusseso,callbackErro)
 // arredondar para baixo = Math.floor()
 //arredondar para o inteiro mais proximo = math.round()
 //gerar um numero aleatorio entre 0 e 1 = math.random()
+
+// ======== FUNÇOES NATIVAS PARA DATAS =======/

@@ -1,0 +1,16 @@
+//----- MOUSE -----//
+
+// onclick = quando clicar no objeto vai fazer a ação 
+// EX: <div onclick="alert('clicou no quadro')" style="background-color: #ccc; width: 150px; height: 150px;" > </div>
+
+// ondblclique = quando clicar duas vezes no objeto vai fazer a ação;
+//EX: <div ondblclick="alert('clicou duas vezes no quadro')" style="background-color: #ccc; width: 150px; height: 150px;" > </div>
+
+// onmouseup = quando soltar o clique do mpuse vai fazer a ação
+// EX: <div onmouseup="alert('soltou o clique do mouse')" style="background-color: purple; width: 150px; height: 150px;" > </div>
+
+//onmouseover = quando passar o mouse sobre o objeto vai fazer a ação
+//EX: <div onmouseover="alert('passou o mouse sobre o quadro')" style="background-color: darkred; width: 150px; height: 150px;" > </div>
+
+//onmouseout = quando tirar o mouse de cima do objeto vai fazer a ação
+//EX: 

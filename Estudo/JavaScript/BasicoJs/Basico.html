@@ -5,10 +5,11 @@
 <title>JAVAscript</title>
 <link rel="stylesheet" href="css/estilo.css">
 <!--<script src="js/script.js"></script>-->
-<script src="js/conceitosBasicos.js"></script>
-<script src="js/somasubtra.js"></script>
+<!--<script src="js/conceitosBasicos.js"></script>-->
+<!--<script src="js/somasubtra.js"></script>-->
 <!--<script src="js/indiceMassaCorporal.js"></script>-->
 <!--<script src="js/media.js"></script>-->
+<script src="js/eventos.js"></script>
 </header>
 
 <body>
@@ -32,7 +33,16 @@ Comentario de Bloco em JavaScript
 */    
  </script>
 
+<!-- onclick = quando clicar no objeto vai fazer a ação  -->
+<div onclick="alert('clicou no quadro')" style="background-color: #ccc; width: 150px; height: 150px;" > </div>
 
+<div ondblclick="alert('clicou duas vezes no quadro')" style="background-color: pink; width: 150px; height: 150px;" > </div>
+
+<div onmouseup="alert('soltou o clique do mouse')" style="background-color: purple; width: 150px; height: 150px;" > </div>
+
+<div onmouseover="alert('passou o mouse sobre o quadro')" style="background-color: darkred; width: 150px; height: 150px;" > </div>
+
+<div onmouseout="alert('tirou o mouse de cima do quadro')" style="background-color: blue; width: 150px; height: 150px;" > </div>
 </body>
 </html>
 

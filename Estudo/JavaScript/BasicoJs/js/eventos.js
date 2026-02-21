@@ -13,4 +13,15 @@
 //EX: <div onmouseover="alert('passou o mouse sobre o quadro')" style="background-color: darkred; width: 150px; height: 150px;" > </div>
 
 //onmouseout = quando tirar o mouse de cima do objeto vai fazer a ação
-//EX: 
+//EX: <div onmouseout="alert('tirou o mouse de cima do quadro')" style="background-color: blue; width: 150px; height: 150px;" > </div>
+
+
+
+//----- TECLADO -----//
+
+//onkeydown = quando pressionar uma tecla do teclado vai fazer a ação
+    // EX: <input onkeydown="alert('tecla clicada')" type="text" >
+//onkeyup = quando soltar uma tecla do teclado vai fazer a ação
+    // EX: <input onkeyup="alert('tecla solta')" type="text" >
+//onkeypress = quando pressionar a tecla do teclado (sendo um caractere) vai fazer a ação
+    // EX: <input onkeypress="alert('tecla pressionada')" type="text" >)

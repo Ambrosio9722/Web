@@ -85,3 +85,28 @@ exibirArtigo(1,callbackSusseso,callbackErro)
 //gerar um numero aleatorio entre 0 e 1 = math.random()
 
 // ======== FUNÇOES NATIVAS PARA DATAS =======/
+
+
+
+
+
+//====== VETORES (ARRAY) ======//
+
+var lista_frutas = Array() // ou var lista-frutas = []
+
+lista_frutas[1]= "bananas"
+lista_frutas[2]= "maça"
+lista_frutas[3]= "pessego"
+lista_frutas[4]= "uva"
+
+console.log(lista_frutas)
+console.log(lista_frutas[2])
+
+var lista_de_elementos = Array()
+
+lista_de_elementos[0] = 200
+lista_de_elementos[1] = "antonio"
+lista_de_elementos[3] = true
+lista_de_elementos[4] = 3.14
+
+var outra_forma_de_criar_array = ["maçã","banana","uva"] // esse não é possivel alterar o valor do array (não pode adicionar ou remover elementos)

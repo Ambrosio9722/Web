@@ -36,9 +36,10 @@ default:
 }
 }
 
-function modificaEstilo(cor){
+function modificaEstilo(cor,altura){
     //usar padrao CamelCase para nomes (background-color vira backgroundColor)
     document.getElementById('quadrado').style.background = cor
+    document.getElementById('quadrado').style.height = altura
 }
 </script>
 
@@ -69,9 +70,9 @@ class="campo_texto">
 <!-- MANIPULANDO STILOS COM DOM-->
 <h3>Manipulando estilos</h3>
 
-<button type="button" onclick="modificaEstilo('#FF0000')"> Vermelho</button>
-<button type="button" onclick="modificaEstilo('#00FF00')"> Verde</button>
-<button type="button" onclick="modificaEstilo('#0000FF')"> Azul</button>
+<button type="button" onclick="modificaEstilo('#FF0000', '200px')"> Vermelho</button>
+<button type="button" onclick="modificaEstilo('#00FF00', '150px')"> Verde</button>
+<button type="button" onclick="modificaEstilo('#0000FF', '125px')"> Azul</button>
 
 <hr>
 

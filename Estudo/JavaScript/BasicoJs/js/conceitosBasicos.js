@@ -125,3 +125,6 @@ lista_de_elementos.pop()
 lista_de_elementos.shift()
 
 // Metodos de persquisa array //
+
+// indexOF()= pesquisar um elemento dentro do array
+lista_de_elementos.indexOf("morango")

@@ -4,6 +4,23 @@
 <meta charset="UTF-8">
 <title>JAVAscript</title>
 
+<style>
+.estilo1{
+ background: #ff0000;
+ color: #fff;
+}
+.estilo2{
+ width: 400px;
+ height: 50px;
+ background-color:  #ff0000;
+ text-align: center;
+ font-size: 25px;
+ color: #fff;
+ padding: 25px;
+}
+
+</style>
+
 <script>
 
 function distribuiCaracter(){
@@ -41,6 +58,11 @@ function modificaEstilo(cor,altura){
     document.getElementById('quadrado').style.background = cor
     document.getElementById('quadrado').style.height = altura
 }
+
+function modificarClasse(){
+    // para alterar classes é precisso usar a propriedade className
+    document.getElementById("mensagem").className = "estilo2"
+}
 </script>
 
 </header>
@@ -77,6 +99,13 @@ class="campo_texto">
 <hr>
 
 <div style="border: 1px solid #000; width: 100px; height: 100px;" id="quadrado"> </div>
+
+
+<!-- MANIPULANDO CLASSES COM DOM-->
+
+<div class="estilo1" id="mensagem"> modificando o estilo da classe </div>
+<hr>
+<button type="button" onclick="modificarClasse()"> Aplicar classe</button>
 
 </body>
 

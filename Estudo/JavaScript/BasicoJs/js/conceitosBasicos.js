@@ -110,3 +110,18 @@ lista_de_elementos[3] = true
 lista_de_elementos[4] = 3.14
 
 var outra_forma_de_criar_array = ["maçã","banana","uva"] // esse não é possivel alterar o valor do array (não pode adicionar ou remover elementos)
+
+// Incluir e excluir elementos //
+
+
+// incluir no final da lista 
+//push = inclui elemento no final da lista
+lista_de_elementos.push("uva")
+//unshift = incluir elemento no começo da lista 
+lista_de_elementos.unshift("batata")
+//pop = excluir elemento no final do array
+lista_de_elementos.pop()
+//shift = excluit elemento no inicio do array
+lista_de_elementos.shift()
+
+// Metodos de persquisa array //

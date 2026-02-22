@@ -18,7 +18,9 @@
  color: #fff;
  padding: 25px;
 }
-
+.amarelo{
+    background: yellow;
+}
 </style>
 
 <script>
@@ -62,6 +64,21 @@ function modificaEstilo(cor,altura){
 function modificarClasse(){
     // para alterar classes é precisso usar a propriedade className
     document.getElementById("mensagem").className = "estilo2"
+}
+
+function textoAmarelo(){
+    document.getElementById("textoAtividade").style.background = "yellow"
+}
+
+function verificarTeclas(){
+    var teclas = document.getElementById("textoAtividade").value
+
+    var quantidade = teclas.length
+   if(quantidade >=3){
+    document.getElementById("textoAtividade").style.background = "green"
+   }else{
+    document.getElementById("textoAtividade").style.background = "red"
+   }
 }
 </script>
 
@@ -107,6 +124,11 @@ class="campo_texto">
 <hr>
 <button type="button" onclick="modificarClasse()"> Aplicar classe</button>
 
+<!-- ATIVIDADE DE REVISÃO -->
+
+<hr>
+ <input type ="text" id="textoAtividade" onkeyup="verificarTeclas()">
+<button type="button" onclick="textoAmarelo()"> Foco</button>
 </body>
 
 </html>

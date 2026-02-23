@@ -128,3 +128,16 @@ lista_de_elementos.shift()
 
 // indexOF()= pesquisar um elemento dentro do array
 lista_de_elementos.indexOf("morango")
+
+
+
+// Ordenação de Arrey
+
+// sort = ordenação alfanumerica 
+lista_frutas.sort()
+
+//função para ordenar valores numericos 
+function ordenaNumeros(a, b){
+ return a - b
+}
+lista_frutas.sort(ordenaNumeros)

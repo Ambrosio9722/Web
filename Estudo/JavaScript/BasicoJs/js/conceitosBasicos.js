@@ -175,6 +175,33 @@ lista_frutas.sort(ordenaNumeros)
       //== FOREACH==//
    //uma função do objeto arrew / aguarda uma função de callback (como vai atuar em cada indice )
 
-   lista_frutas.forEach(function(valor, indice, Arrey)){
+   lista_frutas.forEach(function(valor, indice, Arrey)
+   {
         // logica 
+        console.log("")
+   })
+
+
+   //======= TRATAMENTO DE ERROS =======//
+
+   // gera erro, imple,entar o comando try{} = (tente) \\ finally{}(apos tentar finalize aqui) // catch (tratar o erro)// throw (gerar um erro)
+   var vudeo = Array()
+
+   video[1] = Array()
+   video[1]["nome"] = "Fullmetal Alchemist"
+   video[1]["categoria"] = "Anime"
+
+   function getVideo(video){
+        try{
+        //logica
+        //http
+        console.log(video[0])
+        } 
+        catch(e){ // e = a string que representa o erro 
+               console.log("tratar o erro")
+        }
+        finally{
+            console.log("sempre passa por aqui")
+        }
    }
+   getVideo(video)

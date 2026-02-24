@@ -141,3 +141,29 @@ function ordenaNumeros(a, b){
  return a - b
 }
 lista_frutas.sort(ordenaNumeros)
+
+
+//======= ESTRUTURAS DE REPETIÇÃO =======//
+
+    //== WHILE==//
+
+    var x=1
+
+    while(x<=10){
+  
+        x++
+    }
+
+     //== DO WHILE==//
+     do{
+      // acontecer pelo menos uma vez 
+     }while(x<=10)
+
+
+     //== FOR ==//
+
+     for(var x = 0; x<=10; x++){
+
+     }
+
+     //== FOR IN ==//

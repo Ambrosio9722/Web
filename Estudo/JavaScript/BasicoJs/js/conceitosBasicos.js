@@ -167,3 +167,14 @@ lista_frutas.sort(ordenaNumeros)
      }
 
      //== FOR IN ==//
+     // a cada interação a variavel X vai receber o valor do indice da (lista_frutas) independente de qual seja o indice
+     for(var x in lista_frutas){
+        console.log()
+     }
+
+      //== FOREACH==//
+   //uma função do objeto arrew / aguarda uma função de callback (como vai atuar em cada indice )
+
+   lista_frutas.forEach(function(valor, indice, Arrey)){
+        // logica 
+   }

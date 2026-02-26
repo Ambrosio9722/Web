@@ -69,8 +69,8 @@ function posicaoRandomica(){
     mosquito.style.position = "absolute"
     document.body.appendChild(mosquito) // adicionar a imagem no body da pagina usando a arvore DOM
     mosquito.id="mosquito"
-    mosquito.onclick = function(){
-      this.remove()
+    mosquito.onclick = function() {
+     this.remove()
     }
 }
 

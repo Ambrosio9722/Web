@@ -1,5 +1,7 @@
 // Altenticação //
 
+//mudar a linguagem do firebase (eltenticação)
+firebase.auth().languageCode = 'pt-BR'
 // função que trata a submissão do formulario de autenticação 
 authForm.onsubmit = function (event){ // quando clicar nos btn
     showitem(loading)
@@ -40,7 +42,7 @@ firebase.auth().signOut().catch(function (error){
 function sendEmailVerification(){
     showitem(loading)
     var user = firebase.auth().currentUser // pegar o usuario atual
-    user.sendEmailVerification().then(function(){ //then = se der certo
+    user.sendEmailVerification(actionCodeSettings).then(function(){ //then = se der certo
        alert('E-mail de verificação foi enviado para '+ user.email+ '! Verifique a sua caixa de entrada')
     }).catch(function(error){ // se der erro
         alert('houve um erro ao enviar o e-mail de verificação')

@@ -11,6 +11,9 @@ var auth = document.getElementById('auth')
 var userContent = document.getElementById('userContent')
 
 var userEmail = document.getElementById('userEmail')
+
+var sendEmailVerificationDiv = document.getElementById('sendEmailVerificationDiv')
+var emailVerified = document.getElementById('emailVerified')
 // Alterar o formulario de autenticação para o cadastro de novas contas
 
 function toggleToRegister(){
@@ -41,9 +44,17 @@ function hideItem(element){
 }
 // mostrar conteudo para usuarios altenticados
 function showUserContent(user){
-userEmail.innerHTML = user.email
-hideItem(auth)
-showitem(userContent)
+  console.log(user)
+  if(user.emailVerified){
+   emailVerified.innerHTML = "E-mail verificado"
+   hideItem(sendEmailVerificationDiv)
+  }else{
+   emailVerified.innerHTML = "E-mail não verificado"
+   showitem(sendEmailVerificationDiv)
+  }
+  userEmail.innerHTML = user.email
+  hideItem(auth)
+  showitem(userContent)
 }
 
 // mostrar conteudo para usuarios não altenticados

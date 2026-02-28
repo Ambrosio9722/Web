@@ -2,9 +2,15 @@
 var authForm = document.getElementById('authForm')
 var authFormTitle = document.getElementById('authFormTitle')
 var register = document.getElementById('register')
-var access= document.getElementById('access')
+var access = document.getElementById('access')
 
-var loading= document.getElementById('loading')
+var loading = document.getElementById('loading')
+
+var auth = document.getElementById('auth')
+
+var userContent = document.getElementById('userContent')
+
+var userEmail = document.getElementById('userEmail')
 // Alterar o formulario de autenticação para o cadastro de novas contas
 
 function toggleToRegister(){
@@ -32,4 +38,18 @@ function showitem(element){
 
 function hideItem(element){
   element.style.display = 'none'
+}
+// mostrar conteudo para usuarios altenticados
+function showUserContent(user){
+userEmail.innerHTML = user.email
+hideItem(auth)
+showitem(userContent)
+}
+
+// mostrar conteudo para usuarios não altenticados
+function showAuth(){
+  authForm.email.value = ""
+  authForm.password.value = ""
+  hideItem(userContent)
+  showitem(auth)
 }

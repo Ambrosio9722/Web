@@ -1,6 +1,6 @@
 // Altenticação //
 
-
+// função que trata a submissão do formulario de autenticação 
 authForm.onsubmit = function (event){ // quando clicar nos btn
     showitem(loading)
     event.preventDefault() // nã odeixar redirecionar
@@ -17,14 +17,18 @@ authForm.onsubmit = function (event){ // quando clicar nos btn
     }
 }
 
-
+//funçã que centraliza e trata a autenticação 
 firebase.auth().onAuthStateChanged(function (user){//quando ouver uma mudança na altenticação 
     hideItem(loading)
     if(user){ // user retorna se esta autenticado ou nn (null)
-        console.log('usuario autenticado')
-        console.log(user)
+        showUserContent(user)
     }else{
-        console.log('usuario não autenticado')
+        showAuth()
     }
 })
-
+// sair da conta 
+function signOut(){
+firebase.auth().signOut().catch(function (error){
+            console.log('Falha ao sair da conta')
+            console.log(error)
+})}

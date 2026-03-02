@@ -16,6 +16,10 @@ var sendEmailVerificationDiv = document.getElementById('sendEmailVerificationDiv
 var emailVerified = document.getElementById('emailVerified')
 
 var passwordReset = document.getElementById('passwordReset')
+
+var userName = document.getElementById('userName')
+var userImg = document.getElementById('userImg')
+
 // Alterar o formulario de autenticação para o cadastro de novas contas
 
 function toggleToRegister(){
@@ -56,6 +60,9 @@ function showUserContent(user){
    emailVerified.innerHTML = "E-mail não verificado"
    showitem(sendEmailVerificationDiv)
   }
+
+  userImg.src = user.photoURL ? user.photoURL : 'img/unknownUser.png' // puchar imagem do google e colocar como foto de perfil 
+  userName.innerHTML = user.displayName // adicionar o nome da conta do google 
   userEmail.innerHTML = user.email
   hideItem(auth)
   showitem(userContent)

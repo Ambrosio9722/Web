@@ -80,3 +80,13 @@ function signInWithGoogle(){
         hideItem(loading)
     })
 }
+
+// Função que permite a autenticação pelo Github
+function signInWithGithub(){
+    showitem(loading)
+    firebase.auth().signInWithPopup(new firebase.auth.GithubAuthProvider()).catch(function (error){
+        alert('Houve um erro ao autenticar usando o Github')
+        console.log(error)
+        hideItem(loading)
+    })
+}

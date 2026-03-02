@@ -53,14 +53,19 @@ function hideItem(element){
 // mostrar conteudo para usuarios altenticados
 function showUserContent(user){
   console.log(user)
-  if(user.emailVerified){
+  if(user.providerData[0].providderId != 'password'){
+      emailVerified.innerHTML = "Autenticação por provedor confiavel, não é necessário verificar e-mail"
+      hideItem(sendEmailVerificationDiv)
+  }else{
+    if(user.emailVerified){
    emailVerified.innerHTML = "E-mail verificado"
    hideItem(sendEmailVerificationDiv)
   }else{
    emailVerified.innerHTML = "E-mail não verificado"
    showitem(sendEmailVerificationDiv)
   }
-
+  }
+  
   userImg.src = user.photoURL ? user.photoURL : 'img/unknownUser.png' // puchar imagem do google e colocar como foto de perfil 
   userName.innerHTML = user.displayName // adicionar o nome da conta do google 
   userEmail.innerHTML = user.email

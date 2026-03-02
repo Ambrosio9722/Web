@@ -101,3 +101,21 @@ function signInWithFacebook(){
     })
 }
 
+// função que permite atualizar nomes de ususario 
+function updateUserName(){
+    var newUserName = prompt('Informe um novo nome de usuário. ', userName.innerHTML)
+    if(newUserName && newUserName != ''){
+    userName.innerHTML = newUserName
+    showitem(loading)
+    firebase.auth().currentUser.updateProfile({
+        displayName: newUserName
+    }).catch(function(error){
+    alert('houve um erro ao atúalizar o nome de usuário')
+    console.log(error)
+    }).finally(function(){
+        hideItem(loading)
+    })
+    }else{
+        alert('O nome de usuário não pode ser vazio')
+    }
+}

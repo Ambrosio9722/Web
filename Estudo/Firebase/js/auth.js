@@ -119,3 +119,19 @@ function updateUserName(){
         alert('O nome de usuário não pode ser vazio')
     }
 }
+
+//Função que permite remover contas de usuario 
+function deleteUserAccount(){
+var confirmation = confirm('Realmente deseja excluir a sua conta?')
+if(confirmation){
+    showitem(loading)
+firebase.auth().currentUser.delete().then(function(){
+    alert('conta foi removida com sucesso')
+}).catch(function(error){
+    alert('Houve um erro ao remover a sua conta de usuário ')
+    console.log(error)
+}).finally(function(){
+    hideItem(loading)
+})
+}
+}

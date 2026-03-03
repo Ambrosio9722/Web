@@ -102,5 +102,5 @@ function showError(prefix, error){
 
 //atributos extras de configuração de e-mail
 var actionCodeSettings ={
-  url : 'http://127.0.0.1:5500/'
+  url : 'https://todolist-495bf.firebaseapp.com'
 }

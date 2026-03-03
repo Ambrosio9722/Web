@@ -8,15 +8,11 @@ authForm.onsubmit = function (event){ // quando clicar nos btn
     event.preventDefault() // nã odeixar redirecionar
     if(authForm.submitAuthForm.innerHTML == 'Acessar'){
           firebase.auth().signInWithEmailAndPassword(authForm.email.value, authForm.password.value).catch(function (error){
-              console.log('Falha no acesso')
-              console.log(error)
-               hideItem(loading)
+               showError('Falha no acesso: ', error)
           })// acessar usando email e senha || enviar os campos do formualrio|| esperar a resposta do google
     }else{
             firebase.auth().createUserWithEmailAndPassword(authForm.email.value, authForm.password.value).catch(function (error){
-              console.log('Falha no cadastro')
-              console.log(error)
-               hideItem(loading)
+              showError('Falha no cadastro: ', error)
           })// criar um email e senha 
     }
 }

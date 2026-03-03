@@ -81,6 +81,25 @@ function showAuth(){
   showitem(auth)
 }
 
+//centralizar e traduzir erros
+function showError(prefix, error){
+  console.log(error.code)
+  hideItem(loading)
+  switch (key){
+    case "auth/invalid-email": 
+    case "auth/wrong-password": alert(prefix +" "+ 'E-mail ou senha inválidos')
+    break;
+
+    case "auth/weak-password": alert(prefix +" "+ 'Senha deve conter ao menos 6 caracteres')
+    break;
+
+    case "auth/e-mail-already-in-use": alert(prefix +" "+ 'E-mail já está em uso por outra conta')
+    break;
+
+    default: alert(prefix +"" + error.message)
+  }
+}
+
 //atributos extras de configuração de e-mail
 var actionCodeSettings ={
   url : 'http://127.0.0.1:5500/'

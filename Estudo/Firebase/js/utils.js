@@ -3,22 +3,19 @@ var authForm = document.getElementById('authForm')
 var authFormTitle = document.getElementById('authFormTitle')
 var register = document.getElementById('register')
 var access = document.getElementById('access')
-
 var loading = document.getElementById('loading')
-
 var auth = document.getElementById('auth')
-
 var userContent = document.getElementById('userContent')
-
 var userEmail = document.getElementById('userEmail')
-
 var sendEmailVerificationDiv = document.getElementById('sendEmailVerificationDiv')
 var emailVerified = document.getElementById('emailVerified')
-
 var passwordReset = document.getElementById('passwordReset')
-
 var userName = document.getElementById('userName')
 var userImg = document.getElementById('userImg')
+
+
+// parte do banco de dados 
+var todoForm = document.getElementById('todoForm')
 
 // Alterar o formulario de autenticação para o cadastro de novas contas
 
@@ -104,3 +101,8 @@ function showError(prefix, error){
 var actionCodeSettings ={
   url : 'https://todolist-495bf.firebaseapp.com'
 }
+
+//referencia ao database
+
+var database = firebase.database()
+var dbRefUsers = database.ref('users')

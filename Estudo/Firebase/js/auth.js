@@ -5,7 +5,7 @@ firebase.auth().languageCode = 'pt-BR'
 // função que trata a submissão do formulario de autenticação 
 authForm.onsubmit = function (event){ // quando clicar nos btn
     showitem(loading)
-    event.preventDefault() // nã odeixar redirecionar
+    event.preventDefault() // não deixar redirecionar
     if(authForm.submitAuthForm.innerHTML == 'Acessar'){
           firebase.auth().signInWithEmailAndPassword(authForm.email.value, authForm.password.value).catch(function (error){
                showError('Falha no acesso: ', error)

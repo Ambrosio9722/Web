@@ -11,7 +11,7 @@
         <!--LOGOTIPO-->
          <div id="app">
             <div class="center">
-               <img src="img/todoList.png">
+               <img src="img/aas.png" width="350px">
             </div>
             <!--Feedback de carregamento (loading) -->
             <div id="loading">
@@ -52,7 +52,7 @@
                  <!-- Outros provedores de autenticação -->
                  <p>
                   Ou acesse usando: <br>
-                  <img src="img/google.png" alt="Altenticação pelo google" onclick="signInWithGoogle()">
+                  <img src="img/google1.png" alt="Altenticação pelo google" onclick="signInWithGoogle()" width="32px">
                   <img src="img/github.png" alt="Altenticação pelo github" onclick="signInWithGithub()">
                   <img src="img/facebook.png" alt="Altenticação pelo facebook" onclick="signInWithFacebook()">
                  </p>
@@ -76,10 +76,15 @@
              </div>
 
               <hr>
+               <!-- Lista de tarefas do hsuario-->
+               <div id="todoList">
+                  
+               </div>
+         
 
+         <!-- FOrmulario de tarefas -->
               <div class="center">
-               <!-- FOrmulario de tarefas -->
-            <form id="todoForm">
+                <form id="todoForm">
                <h3 id="todoFormTitle">Adicionar tarefa:</h3>
                <label for="name">Tarefa: </label>
                <input type="text" id="name" placeholder="Tarefa">

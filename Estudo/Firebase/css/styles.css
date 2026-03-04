@@ -2,14 +2,17 @@ body{
     color: #444;
     font-family: Tahoma;
     display: flex;
-    height: 96vh;
+    height: 98vh;
+    background-image: linear-gradient(to bottom, #72bca5 , #f4ddb4, #f1ae2b );
 }
 #app{
     width: 512px;
     margin: auto;
-    box-shadow: 4px 4px 20px #888;
+    box-shadow: 4px 4px 20px #2e2e2e;
     padding: 20px;
     border-radius: 20px;
+    background-color: white ;
+   
 }
 .center{
     text-align: center;
@@ -78,3 +81,4 @@ p{
     height: 40px;
     border-radius: 100%;
 }
+

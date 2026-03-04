@@ -8,6 +8,8 @@ todoForm.onsubmit = function (event) {
 
     dbRefUsers.child(firebase.auth().currentUser.uid).push(data).then(function () {
       console.log('Tarefa "' + data.name + '" adicionada com sucesso')
+    }).catch(function(error){
+      showError('Falha ao adicionar tarefa: ', error)
     })
   } else {
     alert('O nome da tarefa não pode ser em branco para criar a tarefa!')

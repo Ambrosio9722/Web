@@ -3,30 +3,26 @@ body{
     font-family: Tahoma;
     display: flex;
     height: 98vh;
-    background-image: linear-gradient(to bottom, #72bca5 , #f4ddb4, #f1ae2b );
+    background: linear-gradient(180deg, #6fae9c, #e6b34c);
 }
 #app{
     width: 512px;
     margin: auto;
-    box-shadow: 4px 4px 20px #2e2e2e;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: white ;
-   
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 .center{
     text-align: center;
 }
-
 .startHidden{
     display: none;
 }
-
 h3{
     margin: 4px;
     font-weight: normal;
 }
-
 input{
     width: 80%;
     margin: 4px;
@@ -36,7 +32,6 @@ input{
     border: 1px solid #ccc;
     outline: none;
 }
-
 button{
     background-color: #4c4;
     font-size:  15px;

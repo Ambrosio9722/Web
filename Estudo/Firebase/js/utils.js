@@ -16,6 +16,9 @@ var userImg = document.getElementById('userImg')
 
 // parte do banco de dados 
 var todoForm = document.getElementById('todoForm')
+var todoCount = document.getElementById('todoCount')
+var ulTodoList = document.getElementById('ulTodoList')
+
 
 // Alterar o formulario de autenticação para o cadastro de novas contas
 
@@ -67,6 +70,11 @@ function showUserContent(user){
   userName.innerHTML = user.displayName // adicionar o nome da conta do google 
   userEmail.innerHTML = user.email
   hideItem(auth)
+
+  dbRefUsers.child(firebase.auth().currentUser.uid).on('value', function(dataSnapshot){
+    fillTodoList(dataSnapshot)
+  })
+
   showitem(userContent)
 }
 

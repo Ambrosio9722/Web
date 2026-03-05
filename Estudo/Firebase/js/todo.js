@@ -26,7 +26,27 @@ function fillTodoList(dataSnapshot){
     var li = document.createElement('li') // criar um elemento do tipo li
     var spanLi = document.createElement('span')// criar um elemento do tipo span
     spanLi.appendChild(document.createTextNode(value.name))// Adiciona o elemento de texto dentro da nossa span
+    spanLi.id = item.key //define o id do spanLi como a chave da tarefa 
+
     li.appendChild(spanLi)//adiciona o span dentro do Li
+
+    var liRemoveBtn = document.createElement('button') // cria um botão para a remoção da tarefa
+    liRemoveBtn.appendChild(document.createTextNode('Excluir')) // Define o texto do botão como  'excluir
+    liRemoveBtn.setAttribute('onclick', 'removeTudo(\"' + item.key + '\")')
+    liRemoveBtn.setAttribute('class', 'danger todoBtn')
+    li.appendChild(liRemoveBtn) // adiciona o botão de remoão do li
     ulTodoList.appendChild(li)// adiciona o li dentro da lista de tarefas
  })
+}
+
+// remove tarefas 
+
+function removeTudo(key){
+  var selectedItem = document.getElementById(key)
+  var confirmation = confirm('Realmente deseja remover a tarefa' + selectedItem.ineerHTML + '?')
+  if(confirmation){
+     dbRefUsers.child(firebase.auth().currentUser.uid).child(key).remove().catch(function(error){
+      showError('Falha ao remover tarefas: ', error)
+     })
+  }
 }

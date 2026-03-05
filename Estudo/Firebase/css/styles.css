@@ -77,3 +77,18 @@ p{
     border-radius: 100%;
 }
 
+ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+li:hover{
+    background-color: #ddd;
+    border-radius: 8px;
+}
+.todoBtn{
+    float:right;
+    margin: 0 0 0 4px;
+    position: relative;
+    bottom: 3px;
+}

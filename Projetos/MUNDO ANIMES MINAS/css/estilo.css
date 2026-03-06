@@ -1,8 +1,6 @@
 *{
     padding: 0px;
     margin: 0px;
-
-  
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body{
@@ -26,12 +24,56 @@ h1,h3, p {
     color:aliceblue;
 }
 
-.conteudo{
-    border: 3px solid white;
-    width: 200px;
+.container{
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 5px;
+}
+
+.card{
+    background-color: #111;
+    width: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(255,192,203,0.4);
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3{
     color: pink;
-    padding: 20px;
-    margin: 20px;
+}
+
+.card p{
+    padding: 10px;
+    font-size: 14px;
+}
+
+.card button{
+    background-color: pink;
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: hotpink;
 }
 
 a{
@@ -47,6 +89,8 @@ a{
     text-align: center;
 }
 
+
+
 #navegacao{
     text-decoration: none;
     margin: 20px;
@@ -59,20 +103,17 @@ a:hover {
     background-color: white;
   }
 
-#blocoConteudos{
-    
-}
-
+/*
 #conteudoB{
-background-color: white;
-width: 900px;
-position: absolute;
-top:300px;
-right: 390px;
+    background-color: white;
+    width: 800px;*/
+  /*  float: left;  conteúdo principal à esquerda
 
-border: 10px solid pink;
-padding: 10px;
-border-radius: 25px;
+    border: 10px solid pink;
+    padding: 10px;
+    border-radius: 25px;
+
+    margin: 20px;
 }
 
 .noticiaB{
@@ -99,9 +140,17 @@ margin: 10px;
 .noticiasB img{
     border-radius: 25px;
 }
-
-.tigre{
-    position: absolute;
-top:300px;
-right: 100;
+ */
+/*
+#propagandas{
+    width: 220px;
+    float: right;  coluna de propaganda à direita 
+    margin-top: 20px;
 }
+
+.propaganda{
+    border: 3px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}*/

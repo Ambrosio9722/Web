@@ -89,6 +89,8 @@ a{
     text-align: center;
 }
 
+
+
 #navegacao{
     text-decoration: none;
     margin: 20px;
@@ -101,11 +103,11 @@ a:hover {
     background-color: white;
   }
 
-
+/*
 #conteudoB{
     background-color: white;
-    width: 800px;
-    float: left; /* conteúdo principal à esquerda */
+    width: 800px;*/
+  /*  float: left;  conteúdo principal à esquerda
 
     border: 10px solid pink;
     padding: 10px;
@@ -138,7 +140,7 @@ margin: 10px;
 .noticiasB img{
     border-radius: 25px;
 }
-
+ */
 /*
 #propagandas{
     width: 220px;

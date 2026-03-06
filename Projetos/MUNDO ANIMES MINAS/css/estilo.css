@@ -1,8 +1,6 @@
 *{
     padding: 0px;
     margin: 0px;
-
-  
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body{
@@ -141,9 +139,10 @@ margin: 10px;
     border-radius: 25px;
 }
 
+/*
 #propagandas{
     width: 220px;
-    float: right; /* coluna de propaganda à direita */
+    float: right;  coluna de propaganda à direita 
     margin-top: 20px;
 }
 
@@ -152,4 +151,4 @@ margin: 10px;
     padding: 10px;
     margin-bottom: 20px;
     text-align: center;
-}
+}*/
